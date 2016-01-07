@@ -65,6 +65,9 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.DataGrid_EmployeeJob = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Binding_EmployeeJob = new System.Windows.Forms.BindingSource(this.components);
             this.Navigator_EmployeeJob = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
@@ -78,9 +81,8 @@
             this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MenuItem_ReportDefect = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItem_ChartSalary = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -134,7 +136,8 @@
             // ыToolStripMenuItem
             // 
             this.ыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuItem_ReportSalary});
+            this.MenuItem_ReportSalary,
+            this.MenuItem_ReportDefect});
             this.ыToolStripMenuItem.Name = "ыToolStripMenuItem";
             resources.ApplyResources(this.ыToolStripMenuItem, "ыToolStripMenuItem");
             // 
@@ -147,6 +150,7 @@
             // графикToolStripMenuItem
             // 
             this.графикToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuItem_ChartSalary,
             this.MenuItem_ChartDefect});
             this.графикToolStripMenuItem.Name = "графикToolStripMenuItem";
             resources.ApplyResources(this.графикToolStripMenuItem, "графикToolStripMenuItem");
@@ -390,6 +394,24 @@
             this.DataGrid_EmployeeJob.RowHeadersVisible = false;
             this.DataGrid_EmployeeJob.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "tariff";
+            resources.ApplyResources(this.Column4, "Column4");
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "amount";
+            resources.ApplyResources(this.Column5, "Column5");
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "defect";
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            // 
             // Navigator_EmployeeJob
             // 
             this.Navigator_EmployeeJob.AddNewItem = this.bindingNavigatorAddNewItem1;
@@ -477,23 +499,17 @@
             this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
             resources.ApplyResources(this.bindingNavigatorSeparator5, "bindingNavigatorSeparator5");
             // 
-            // Column4
+            // MenuItem_ReportDefect
             // 
-            this.Column4.DataPropertyName = "tariff";
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
+            this.MenuItem_ReportDefect.Name = "MenuItem_ReportDefect";
+            resources.ApplyResources(this.MenuItem_ReportDefect, "MenuItem_ReportDefect");
+            this.MenuItem_ReportDefect.Click += new System.EventHandler(this.OnMenuItemReportDefectClick);
             // 
-            // Column5
+            // MenuItem_ChartSalary
             // 
-            this.Column5.DataPropertyName = "amount";
-            resources.ApplyResources(this.Column5, "Column5");
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "defect";
-            resources.ApplyResources(this.Column6, "Column6");
-            this.Column6.Name = "Column6";
+            this.MenuItem_ChartSalary.Name = "MenuItem_ChartSalary";
+            resources.ApplyResources(this.MenuItem_ChartSalary, "MenuItem_ChartSalary");
+            this.MenuItem_ChartSalary.Click += new System.EventHandler(this.OnMenuItemChartSalaryClick);
             // 
             // MainForm
             // 
@@ -587,5 +603,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.ToolStripMenuItem MenuItem_ReportDefect;
+        private System.Windows.Forms.ToolStripMenuItem MenuItem_ChartSalary;
     }
 }

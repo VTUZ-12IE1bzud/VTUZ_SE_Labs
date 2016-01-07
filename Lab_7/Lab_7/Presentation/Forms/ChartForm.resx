@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Chart_Defect.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Chart_All.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
-  <data name="Chart_Defect.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Chart_All.Size" type="System.Drawing.Size, System.Drawing">
     <value>476, 427</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Chart_Defect.TabIndex" type="System.Int32, mscorlib">
+  <data name="Chart_All.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="Chart_Defect.Text" xml:space="preserve">
+  <data name="Chart_All.Text" xml:space="preserve">
     <value>chart1</value>
   </data>
-  <data name="&gt;&gt;Chart_Defect.Name" xml:space="preserve">
-    <value>Chart_Defect</value>
+  <data name="&gt;&gt;Chart_All.Name" xml:space="preserve">
+    <value>Chart_All</value>
   </data>
-  <data name="&gt;&gt;Chart_Defect.Type" xml:space="preserve">
+  <data name="&gt;&gt;Chart_All.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;Chart_Defect.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Chart_All.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Chart_Defect.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Chart_All.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="Binding_ChartDefect.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -169,7 +169,7 @@
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DefectChartForm</value>
+    <value>ChartForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

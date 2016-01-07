@@ -1,11 +1,9 @@
-﻿namespace Lab_7.Data.Repository {
-    class EmployeeSalaryRepository {
+﻿using System;
 
-        private readonly DataManager _dm;
+namespace Lab_7.Data.Repository {
+    class EmployeeSalaryRepository : IViewRepository {
 
-        public EmployeeSalaryRepository(DataManager dm) {
-            _dm = dm;
-        }
+        private DataManager _dm;
 
         public void Load() {
             DataManagerTableAdapters.ViewEmloyeeSalaryTableAdapter tableAdapter 
@@ -17,6 +15,10 @@
             DataManagerTableAdapters.ViewEmloyeeSalaryTableAdapter tableAdapter
                 = new DataManagerTableAdapters.ViewEmloyeeSalaryTableAdapter();
             tableAdapter?.Connection?.Close();
+        }
+
+        public void SetDM(DataManager dm) {
+            _dm = dm;
         }
     }
 

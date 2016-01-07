@@ -1,5 +1,5 @@
 ﻿namespace Lab_7.Presentation.Forms {
-    partial class SalaryReportForm {
+    partial class ReportForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -24,30 +24,25 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalaryReportForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportForm));
             this.Binding_ReportSalary = new System.Windows.Forms.BindingSource(this.components);
-            this.ReportView_Salary = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.ReportView_All = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.Binding_ReportSalary)).BeginInit();
             this.SuspendLayout();
             // 
-            // ReportView_Salary
+            // ReportView_All
             // 
-            reportDataSource1.Name = "DataReportSalary";
-            reportDataSource1.Value = this.Binding_ReportSalary;
-            this.ReportView_Salary.LocalReport.DataSources.Add(reportDataSource1);
-            this.ReportView_Salary.LocalReport.ReportEmbeddedResource = "Lab_7.Assets.ReportSalary.rdlc";
-            resources.ApplyResources(this.ReportView_Salary, "ReportView_Salary");
-            this.ReportView_Salary.Name = "ReportView_Salary";
+            resources.ApplyResources(this.ReportView_All, "ReportView_All");
+            this.ReportView_All.Name = "ReportView_All";
             // 
-            // SalaryReportForm
+            // ReportForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ReportView_Salary);
+            this.Controls.Add(this.ReportView_All);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SalaryReportForm";
+            this.Name = "ReportForm";
             ((System.ComponentModel.ISupportInitialize)(this.Binding_ReportSalary)).EndInit();
             this.ResumeLayout(false);
 
@@ -55,7 +50,7 @@
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer ReportView_Salary;
+        private Microsoft.Reporting.WinForms.ReportViewer ReportView_All;
         private System.Windows.Forms.BindingSource Binding_ReportSalary;
     }
 }

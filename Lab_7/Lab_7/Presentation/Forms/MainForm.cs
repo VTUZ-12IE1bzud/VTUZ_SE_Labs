@@ -12,6 +12,8 @@ namespace Lab_7.Presentation.Forms {
         public event EventHandler OnShowReportSalaryClick = delegate { };
         public event EventHandler OnShowChartDefectClick = delegate { };
         public event EventHandler OnShowAboutClick = delegate { };
+        public event EventHandler OnShowChartSalaryClick = delegate { };
+        public event EventHandler OnShowReportDefectClick = delegate { };
 
         public MainForm(ApplicationContext context) {
             _context = context;
@@ -104,6 +106,14 @@ namespace Lab_7.Presentation.Forms {
 
         private void OnRadioBtnSortAscChecked(object sender, EventArgs e) {
             OnFilterChange(this, EventArgs.Empty);
+        }
+
+        private void OnMenuItemChartSalaryClick(object sender, EventArgs e) {
+            OnShowChartSalaryClick(this, EventArgs.Empty);
+        }
+
+        private void OnMenuItemReportDefectClick(object sender, EventArgs e) {
+            OnShowReportDefectClick(this, EventArgs.Empty);
         }
     }
 }

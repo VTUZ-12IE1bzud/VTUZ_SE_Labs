@@ -1,11 +1,9 @@
-﻿namespace Lab_7.Data.Repository {
-    class EmployeeDefectRepository {
+﻿using System;
 
-        private readonly DataManager _dm;
+namespace Lab_7.Data.Repository {
+    class EmployeeDefectRepository : IViewRepository {
 
-        public EmployeeDefectRepository(DataManager dm) {
-            _dm = dm;
-        }
+        private DataManager _dm;
 
         public void Load() {
             DataManagerTableAdapters.ViewEmployeeDefectTableAdapter tableAdapter
@@ -22,5 +20,8 @@
 
         }
 
+        public void SetDM(DataManager dm) {
+            _dm = dm;
+        }
     }
 }

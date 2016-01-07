@@ -10,6 +10,8 @@ namespace Lab_7.Presentation.View {
         event EventHandler OnShowReportSalaryClick;
         event EventHandler OnShowChartDefectClick;
         event EventHandler OnShowAboutClick;
+        event EventHandler OnShowChartSalaryClick;
+        event EventHandler OnShowReportDefectClick;
 
 
         string GetFilterSurname();

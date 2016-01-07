@@ -19,6 +19,8 @@ namespace Lab_7.Presentation.Presenter {
             _view.OnShowAboutClick += OnShowAbout;
             _view.OnShowChartDefectClick += OnShowChartDefect;
             _view.OnShowReportSalaryClick += OnShowReportSalary;
+            _view.OnShowReportDefectClick += OnShowReportDefect;
+            _view.OnShowChartSalaryClick += OnShowChartSalary;
         }
 
         public override void Run() {
@@ -63,15 +65,26 @@ namespace Lab_7.Presentation.Presenter {
         }
 
         private void OnShowReportSalary(object sender, System.EventArgs e) {
-            IReportSalaryView view = new Forms.SalaryReportForm(new ApplicationContext());
-            IPresenter presenter = new SalaryReportPresenter(view);
+            IReportView view = new Forms.ReportForm(new ApplicationContext());
+            IPresenter presenter = new ReportPresenter(view, new Data.Repository.EmployeeSalaryRepository());
             presenter?.Run();
         }
         private void OnShowChartDefect(object sender, System.EventArgs e) {
-            IChartDefectView view = new Forms.DefectChartForm(new ApplicationContext());
-            IPresenter presenter = new DefectChartPresenter(view);
+            IChartView view = new Forms.ChartForm(new ApplicationContext());
+            IPresenter presenter = new DefectChartPresenter(view, new Data.Repository.EmployeeDefectRepository());
             presenter?.Run();
         }
 
+        private void OnShowChartSalary(object sender, System.EventArgs e) {
+            IChartView view = new Forms.ChartForm(new ApplicationContext());
+            IPresenter presenter = new DefectChartPresenter(view, new Data.Repository.EmployeeSalaryRepository());
+            presenter?.Run();
+        }
+
+        private void OnShowReportDefect(object sender, System.EventArgs e) {
+            IReportView view = new Forms.ReportForm(new ApplicationContext());
+            IPresenter presenter = new ReportPresenter(view, new Data.Repository.EmployeeDefectRepository());
+            presenter?.Run();
+        }
     }
 }

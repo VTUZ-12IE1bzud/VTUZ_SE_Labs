@@ -60,6 +60,7 @@
     <Compile Include="Data\Repository\EmployeeJobFactory.cs" />
     <Compile Include="Data\Repository\EmployeeRepository.cs" />
     <Compile Include="Data\Repository\EmployeeSalaryRepository.cs" />
+    <Compile Include="Data\Repository\IViewRepository.cs" />
     <Compile Include="Data\Repository\JobRepository.cs" />
     <Compile Include="Presentation\Forms\AboutForm.cs">
       <SubType>Form</SubType>
@@ -67,11 +68,11 @@
     <Compile Include="Presentation\Forms\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\DefectChartForm.cs">
+    <Compile Include="Presentation\Forms\ChartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\DefectChartForm.Designer.cs">
-      <DependentUpon>DefectChartForm.cs</DependentUpon>
+    <Compile Include="Presentation\Forms\ChartForm.Designer.cs">
+      <DependentUpon>ChartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -79,22 +80,22 @@
     <Compile Include="Presentation\Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Forms\SalaryReportForm.cs">
+    <Compile Include="Presentation\Forms\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Forms\SalaryReportForm.Designer.cs">
-      <DependentUpon>SalaryReportForm.cs</DependentUpon>
+    <Compile Include="Presentation\Forms\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Presenter\AboutPresenter.cs" />
     <Compile Include="Presentation\Presenter\BasePresenter.cs" />
-    <Compile Include="Presentation\Presenter\DefectChartPresenter.cs" />
+    <Compile Include="Presentation\Presenter\ChartPresenter.cs" />
     <Compile Include="Presentation\Presenter\IPresenter.cs" />
     <Compile Include="Presentation\Presenter\MainPresenter.cs" />
-    <Compile Include="Presentation\Presenter\SalaryReportPresenter.cs" />
+    <Compile Include="Presentation\Presenter\ReportPresenter.cs" />
     <Compile Include="Presentation\View\IAboutView.cs" />
-    <Compile Include="Presentation\View\IChartDefectView.cs" />
+    <Compile Include="Presentation\View\IChartView.cs" />
     <Compile Include="Presentation\View\IMainView.cs" />
-    <Compile Include="Presentation\View\IReportSalaryView.cs" />
+    <Compile Include="Presentation\View\IReportView.cs" />
     <Compile Include="Presentation\View\IView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,18 +105,19 @@
       <DependentUpon>ResString.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\FilterUtils.cs" />
+    <EmbeddedResource Include="Assets\ReportDefect.rdlc" />
     <EmbeddedResource Include="Assets\ReportSalary.rdlc" />
     <EmbeddedResource Include="Presentation\Forms\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\DefectChartForm.resx">
-      <DependentUpon>DefectChartForm.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\Forms\ChartForm.resx">
+      <DependentUpon>ChartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Forms\SalaryReportForm.resx">
-      <DependentUpon>SalaryReportForm.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\Forms\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
